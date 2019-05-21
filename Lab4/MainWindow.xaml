@@ -26,10 +26,11 @@
                             </GridView>
                         </ListView.View>
                     </ListView>
-                    <TextBox x:Name="request" HorizontalAlignment="Left" Height="23" Margin="193,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <Button x:Name="button" Content="发送消息" HorizontalAlignment="Left" Margin="193,114,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+                    <TextBox x:Name="request" HorizontalAlignment="Left" Height="23" Margin="193,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="button" Content="发送消息" HorizontalAlignment="Left" Margin="193,92,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+                    <TextBox x:Name="Real_Data" HorizontalAlignment="Left" Height="23" Margin="193,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                 </Grid>
-                <Grid Height="253" Canvas.Left="547" Canvas.Top="10" Width="237">
+                <Grid Height="228" Canvas.Left="547" Canvas.Top="10" Width="237">
                     <Label x:Name="label1" Content="红灯" HorizontalAlignment="Left" Margin="27,20,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label1_Copy" Content="绿灯" HorizontalAlignment="Left" Margin="27,46,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label1_Copy1" Content="黄灯" HorizontalAlignment="Left" Margin="27,72,0,0" VerticalAlignment="Top"/>
@@ -40,13 +41,12 @@
                     <Slider x:Name="yellow" HorizontalAlignment="Left" Margin="66,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
                     <Slider x:Name="blue" HorizontalAlignment="Left" Margin="66,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
                     <Slider x:Name="white" HorizontalAlignment="Left" Margin="66,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Button x:Name="send" Content="发 送" HorizontalAlignment="Left" Margin="66,199,0,0" VerticalAlignment="Top" Width="92" Height="44"/>
-                    <Ellipse x:Name="total" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="36,155,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
-                    <Label x:Name="label2" Content="颜色块显示LED明暗" HorizontalAlignment="Left" Margin="66,155,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Ellipse x:Name="total" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="36,172,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
+                    <Label x:Name="label2" Content="颜色块显示LED明暗" HorizontalAlignment="Left" Margin="66,172,0,0" VerticalAlignment="Top" Width="120"/>
                 </Grid>
-                <Grid Height="147" Canvas.Left="547" Canvas.Top="263" Width="237">
-                    <Button x:Name="start" Content="log开始" HorizontalAlignment="Left" Margin="54,24,0,0" VerticalAlignment="Top" Width="118" Height="30" Click="Log_Start"/>
-                    <Button x:Name="end" Content="log结束" HorizontalAlignment="Left" Margin="54,79,0,0" VerticalAlignment="Top" Width="118" Height="30" Click="Log_End"/>
+                <Grid Height="172" Canvas.Left="547" Canvas.Top="238" Width="237">
+                    <Button x:Name="start" Content="log开始" HorizontalAlignment="Left" Margin="54,31,0,0" VerticalAlignment="Top" Width="118" Height="30" Click="Log_Start"/>
+                    <Button x:Name="end" Content="log结束" HorizontalAlignment="Left" Margin="54,93,0,0" VerticalAlignment="Top" Width="118" Height="30" Click="Log_End"/>
                 </Grid>
                 <Grid Height="206" Canvas.Left="219" Canvas.Top="204" Width="323">
                     <WindowsFormsHost HorizontalAlignment="Left" Height="98" VerticalAlignment="Top" Width="323">
@@ -57,7 +57,7 @@
                     </WindowsFormsHost>
 
                 </Grid>
-                <Grid Height="201" Canvas.Left="10" Canvas.Top="209" Width="204">
+                <Grid Height="206" Canvas.Left="10" Canvas.Top="204" Width="204">
                     <Label x:Name="label" Content="显示温度" HorizontalAlignment="Left" Margin="36,25,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label_Copy" Content="显示光强" HorizontalAlignment="Left" Margin="36,104,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="temperature" HorizontalAlignment="Left" Height="18" Margin="116,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>

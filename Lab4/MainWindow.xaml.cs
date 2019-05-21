@@ -80,6 +80,7 @@ namespace Lab4
             foreach (string portname in portnames)  //添加端口
                 x.Items.Add(portname);
         }
+
         private void recv_data(object sender,SerialDataReceivedEventArgs e) //接受数据
         {
             cdata.Clear();  //清空接收容器

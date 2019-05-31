@@ -36,12 +36,12 @@
                     <Label x:Name="label1_Copy1" Content="黄灯" HorizontalAlignment="Left" Margin="27,72,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label1_Copy2" Content="蓝灯" HorizontalAlignment="Left" Margin="27,98,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label1_Copy3" Content="白灯" HorizontalAlignment="Left" Margin="27,124,0,0" VerticalAlignment="Top"/>
-                    <Slider x:Name="red" HorizontalAlignment="Left" Margin="66,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Slider x:Name="green" HorizontalAlignment="Left" Margin="66,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Slider x:Name="yellow" HorizontalAlignment="Left" Margin="66,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Slider x:Name="blue" HorizontalAlignment="Left" Margin="66,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Slider x:Name="white" HorizontalAlignment="Left" Margin="66,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value"/>
-                    <Ellipse x:Name="total" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="36,172,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
+                    <Slider x:Name="red" HorizontalAlignment="Left" Margin="66,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value" Maximum="255"/>
+                    <Slider x:Name="green" HorizontalAlignment="Left" Margin="66,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value" Maximum="255"/>
+                    <Slider x:Name="yellow" HorizontalAlignment="Left" Margin="66,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value" Maximum="255"/>
+                    <Slider x:Name="blue" HorizontalAlignment="Left" Margin="66,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value" Maximum="255"/>
+                    <Slider x:Name="white" HorizontalAlignment="Left" Margin="66,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.117,-0.148" Width="150" Height="26" ValueChanged="Change_Value" Maximum="255"/>
+                    <Ellipse x:Name="total" Fill="Black" HorizontalAlignment="Left" Height="26" Margin="36,172,0,0" Stroke="Black" VerticalAlignment="Top" Width="25"/>
                     <Label x:Name="label2" Content="颜色块显示LED明暗" HorizontalAlignment="Left" Margin="66,172,0,0" VerticalAlignment="Top" Width="120"/>
                 </Grid>
                 <Grid Height="172" Canvas.Left="547" Canvas.Top="238" Width="237">

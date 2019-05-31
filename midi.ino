@@ -1,4 +1,4 @@
-﻿byte buffer[3];
+byte buffer[3];
 int pwms[5]={255};
 int c[5]={3,5,6,9,10};
 unsigned long TIME;
@@ -60,11 +60,16 @@ void loop() {
         else if(first==1){
           digitalWrite(Channel,HIGH);
         }
-      }
-      else if((byte)(cmd_channel>>4)==0xC&&(byte)first==0x66&&(byte)second==0){  //pinMode(Channel, INPUT);
         int state=digitalRead(Channel);
         Serial.write((byte)cmd_channel);
         Serial.write((byte)state);
+        Serial.write((byte)0);
+      }
+      else if((byte)(cmd_channel>>4)==0xC&&(byte)first==0x66&&(byte)second==0){
+        int state=digitalRead(Channel);
+        Serial.write((byte)cmd_channel);
+        Serial.write((byte)state);
+        Serial.write((byte)0);
       }
       else{ //无效
         Serial.write((byte)0xF);

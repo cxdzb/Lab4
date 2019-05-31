@@ -296,40 +296,40 @@ namespace Lab4
         }
         private void Change_Value(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            total.Fill = new SolidColorBrush(System.Windows.Media.Color.FromArgb(255, (byte)((10-red.Value)*25.5), (byte)((10 - green.Value) * 25.5), (byte)((10 - blue.Value) * 25.5)));   //绘制结合的颜色
+            total.Fill = new SolidColorBrush(System.Windows.Media.Color.FromArgb(255, (byte)red.Value, (byte)green.Value, (byte)blue.Value));   //绘制结合的颜色
             //判断是哪个值改变了
-            if (10-red.Value != led.red)
+            if (255-red.Value != led.red)
             {
-                led.red = 10-red.Value;
-                int pwm = (int)(led.red * 255 / 10);
+                led.red = 255 - red.Value;
+                int pwm = (int)led.red;
                 send_data(0xD9,(byte)(pwm&0x7F), (byte)((pwm>>7)&0x1));
                 return;
             }
-            if (10 - green.Value != led.green)
+            if (255 - green.Value != led.green)
             {
-                led.green = 10 - green.Value;
-                int pwm = (int)(led.green * 255 / 10);
+                led.green = 255 - green.Value;
+                int pwm = (int)led.green;
                 send_data(0xD5, (byte)(pwm & 0x7F), (byte)((pwm >> 7) & 0x1));
                 return;
             }
-            if (10 - yellow.Value != led.yellow)
+            if (255 - yellow.Value != led.yellow)
             {
-                led.yellow = 10 - yellow.Value;
-                int pwm = (int)(led.yellow * 255 / 10);
+                led.yellow = 255 - yellow.Value;
+                int pwm = (int)led.yellow;
                 send_data(0xD3, (byte)(pwm & 0x7F), (byte)((pwm >> 7) & 0x1));
                 return;
             }
-            if (10 - blue.Value != led.blue)
+            if (255 - blue.Value != led.blue)
             {
-                led.blue = 10 - blue.Value;
-                int pwm = (int)(led.blue * 255 / 10);
+                led.blue = 255 - blue.Value;
+                int pwm = (int)led.blue;
                 send_data(0xD6, (byte)(pwm & 0x7F), (byte)((pwm >> 7) & 0x1));
                 return;
             }
-            if (10 - white.Value != led.white)
+            if (255 - white.Value != led.white)
             {
-                led.white = 10 - white.Value;
-                int pwm = (int)(led.white * 255 / 10);
+                led.white = 255 - white.Value;
+                int pwm = (int)led.white;
                 send_data(0xDA, (byte)(pwm & 0x7F), (byte)((pwm >> 7) & 0x1));
                 return;
             }
